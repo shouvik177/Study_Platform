@@ -4,6 +4,7 @@ import ResourcesSection from "./components/ResourcesSection";
 import CodePractice from "./components/CodePractice";
 import TaskList from "./components/TaskList";
 import "./style.css";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
             <Route path="/practice" element={<CodePractice />} />
           </Routes>
         </div>
+        <div className="app-container">
+      {/* Other components */}
+      <Footer />
+    </div>
       </div>
     </Router>
   );
